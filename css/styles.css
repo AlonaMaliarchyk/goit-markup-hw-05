@@ -108,6 +108,7 @@ body {
 
 .header-link {
     color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link.current {
@@ -132,10 +133,10 @@ body {
 .header-link:hover,
 .header-link:focus,
 .contact:hover,
+.contact:focus,
 .contact-icon:hover,
-.contact:focus {
+.contact-icon:focus {
     color: var(--accent-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .contact {
@@ -145,6 +146,7 @@ body {
     line-height: 1.42;
     letter-spacing: 0.02em;
     align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:not(:last-child) {
@@ -156,7 +158,6 @@ body {
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-icon {
@@ -164,6 +165,7 @@ body {
     height: 12px;
     fill: currentColor;
     margin-right: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------page-heder------*/
@@ -259,11 +261,12 @@ body {
     border-radius: 4px;
     border: 1px solid transparent;
     padding: 10px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #188CE8;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*---------------overlay--------------*/
@@ -299,6 +302,10 @@ body {
     padding: 6px 22px;
     display: inline-block;
     border: 1px solid transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -306,7 +313,8 @@ body {
 .btn:focus {
     background-color: var(--accent-color);
     color: var(--white);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .portfolio-btn {
@@ -422,6 +430,32 @@ body {
     padding-bottom: var(--section-padding-gap);
 }
 
+/*--------overlay work-----------*/
+
+.work-product-thumb {
+    position: relative;
+
+}
+
+.work-product-text {
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+    left: 0;
+}
+
 .team .list>.page-work {
     margin-top: 94px;
 }
@@ -465,6 +499,7 @@ body {
 
 .icon {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-team {
@@ -482,13 +517,11 @@ body {
 .icon-social:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social:hover svg,
 .icon-social:focus svg {
     fill: #FFFFFF;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-social {
@@ -501,6 +534,8 @@ body {
     align-content: center;
     display: flex;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-list .title {
@@ -520,7 +555,6 @@ body {
 .project-list:hover,
 .project-list:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-------------------customers------------*/
@@ -544,6 +578,8 @@ body {
     display: flex;
     justify-content: center;
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .all-customers>li:not(:last-child) {
@@ -553,13 +589,11 @@ body {
 .icons-customers:hover,
 .icons-customers:focus {
     border: 1px solid var(--accent-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-customers:hover svg,
 .icons-customers:focus svg {
     fill: var(--accent-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------footer--------------*/
@@ -612,12 +646,12 @@ body {
 
 .footer-contact {
     color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--accent-color);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-now {
@@ -655,6 +689,8 @@ body {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     fill: #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-join>li:not(:last-child) {
@@ -665,7 +701,6 @@ body {
 .icon-footer:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-info-container {
@@ -684,7 +719,7 @@ body {
     margin-top: calc(-1 * var(--card-item-gap));
 }
 
-.project-card-set>.project-list {
+.project-card-set .project-list {
     flex-basis: calc(100% / 3 - var(--card-item-gap));
     margin-left: var(--card-item-gap);
     margin-top: var(--card-item-gap);
@@ -694,9 +729,13 @@ body {
 /*-------------overlay-------*/
 .product-thumb {
     position: relative;
+    overflow: hidden;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-thumb:hover .product-actions {
+.product-thumb:hover .product-actions,
+.product-thumb:focus .product-actions {
     content: "";
     display: inline-block;
     background-color: rgba(33, 150, 243, 0.9);
@@ -705,15 +744,14 @@ body {
     height: 100%;
     position: absolute;
     opacity: 1;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     transform: translateY(0);
-
 }
 
 .product-actions {
     position: absolute;
-    width: 322px;
-    height: 168px;
+    width: 100%;
+    height: 100%;
     height: 100%;
     font-size: 18px;
     line-height: 1.55;
@@ -724,7 +762,8 @@ body {
     color: rgba(255, 255, 255, 1);
     opacity: 0;
     padding: 63px 24px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-list {
@@ -768,25 +807,30 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
 }
 
-.modal-close {
+.modal-close-btn-container {
     position: absolute;
     right: 8px;
     top: 8px;
+}
+
+.modal-close {
+    padding: 0;
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.icon-modal-close {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

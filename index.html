@@ -110,13 +110,33 @@
           <h2 class="pretitle work text-centered">Чем мы занимаемся</h2>
           <ul class="list card-set">
             <li class="work-item">
-              <img src="./img/we_do/about_img1.jpg" alt="планируем" width="370" height="294" />
+              <div class="work-product-thumb">
+                <div class="work-product">
+                  <img src="./img/we_do/about_img1.jpg" alt="планируем" width="370" height="294" />
+                  <p class="work-product-text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="work-item">
-              <img src="./img/we_do/about_img2.jpg" alt="конструируем" width="370" height="294" />
+              <div class="work-product-thumb">
+                <div class="work-product">
+                  <img
+                    src="./img/we_do/about_img2.jpg"
+                    alt="конструируем"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="work-product-text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="work-item">
-              <img src="./img/we_do/about_img3.jpg" alt="рисуем" width="370" height="294" />
+              <div class="work-product-thumb">
+                <div class="work-product">
+                  <img src="./img/we_do/about_img3.jpg" alt="рисуем" width="370" height="294" />
+                  <p class="work-product-text">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -418,11 +438,13 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
-          <svg class="icon-modal-close" width="18" height="18">
-            <use href="./img/icon/icons.svg#icon-close-black-18dp-2-1"></use>
-          </svg>
-        </button>
+        <div class="modal-close-btn-container">
+          <button type="button" class="modal-close" data-modal-close>
+            <svg width="18" height="18">
+              <use href="./img/icon/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
