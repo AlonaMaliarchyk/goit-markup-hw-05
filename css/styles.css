@@ -231,6 +231,8 @@ body {
 
 .hero-title-container {
     text-align: center;
+    width: 696px;
+    height: 120px;
 }
 
 .hero-title {
@@ -241,10 +243,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    min-width: 696px;
     margin-bottom: 30px;
-    padding: 10px 32px;
-
 }
 
 .hero-button {
@@ -279,8 +278,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero.jpg);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px 452px;
 }
 
 /*------section------*/
@@ -677,8 +675,8 @@ body {
 }
 
 .icon-footer {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-position: center;
     text-align: center;
